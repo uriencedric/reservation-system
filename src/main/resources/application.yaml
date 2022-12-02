@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:~/asset-db;
+    username: sa
+    password: sa
+    initialization-mode: always
+  jpa:
+
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+server:
+  port: 8080
+  servlet:
+    context-path: /api/inventory/
+logging:
+  level:
+    root: OFF
+    com.asset.reservation.asset: OFF
